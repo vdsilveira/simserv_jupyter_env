@@ -25,7 +25,7 @@ fi
 # Pandoc + LaTeX (para gerar PDF dos exercicios)
 command -v pandoc >/dev/null 2>&1 || {
     echo "Pandoc nao encontrado. Instalando..."
-    sudo apt-get install -y -qq pandoc texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-xetex
+    sudo apt-get install -y -qq pandoc texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-xetex poppler-utils
 }
 
 echo "Python: $(python3 --version)"
