@@ -3,7 +3,25 @@ set -euo pipefail
 
 echo "=== SimServ Jupyter Environment - Setup ==="
 
-command -v python3 >/dev/null 2>&1 || { echo "Erro: python3 nao encontrado. Instale Python 3.10+."; exit 1; }
+# Git (instala se nao existir)
+command -v git >/dev/null 2>&1 || {
+    echo "Git nao encontrado. Instalando..."
+    sudo apt-get update -qq && sudo apt-get install -y -qq git
+}
+
+# Python 3.10+ (instala se nao existir ou versao antiga)
+PYTHON_OK=false
+if command -v python3 >/dev/null 2>&1; then
+    VER=$(python3 --version | grep -oP '\d+\.\d+' | head -1)
+    if awk "BEGIN {exit !($VER >= 3.10)}" 2>/dev/null; then
+        PYTHON_OK=true
+    fi
+fi
+if [ "$PYTHON_OK" = false ]; then
+    echo "Python 3.10+ nao encontrado. Instalando..."
+    sudo apt-get update -qq && sudo apt-get install -y -qq python3 python3-venv python3-pip
+fi
+
 echo "Python: $(python3 --version)"
 
 if [ ! -d .venv ]; then

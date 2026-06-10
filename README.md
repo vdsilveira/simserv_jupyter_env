@@ -5,8 +5,8 @@ adaptados para usar **Ollama Cloud** em vez do servidor local de IA.
 
 ## Pré-requisitos
 
-- Python 3.10+
-- Git
+> O `setup.sh` tenta instalar automaticamente Python 3.10+ e Git via `apt`.
+> Caso não tenha sudo configurado, instale-os manualmente antes de rodar o script.
 
 ## Passo a passo
 
