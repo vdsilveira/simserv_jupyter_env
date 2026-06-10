@@ -3,5 +3,8 @@
 .env
 __pycache__/
 *.pyc
-executed_notebook.ipynb
+executed_*.ipynb
 avaliacoes_exequibilidade/
+diagnostico_*.txt
+teste_escrita_*.txt
+work/
