@@ -1,7 +1,7 @@
 # SimServ Jupyter Environment
 
 Ambiente local dos notebooks de familiarização com JupyterLab do SimServ,
-adaptados para usar **Ollama Cloud** em vez do servidor local de IA.
+adaptados para usar **Ollama Cloud** em vez do servidor de IA.
 
 ## Pré-requisitos
 
