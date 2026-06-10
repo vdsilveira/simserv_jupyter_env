@@ -52,7 +52,7 @@ fi
 
 echo ""
 echo "=== Setup concluido ==="
-echo "Para iniciar: jupyter lab"
+echo "Para iniciar: source .venv/bin/activate && jupyter lab"
 echo ""
 echo "Use ambiente_laboratorio/ para editar copias dos notebooks."
 echo "Para desproteger recursos_e_exercicios/ (antes de git pull): ./desproteger.sh"

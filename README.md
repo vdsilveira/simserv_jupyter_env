@@ -13,7 +13,7 @@ adaptados para usar **Ollama Cloud** em vez do servidor local de IA.
 ### 1. Clonar o repositório
 
 ```bash
-git clone <url-do-repositorio> simserv_jupyter_env
+git clone git@github.com:vdsilveira/simserv_jupyter_env.git
 cd simserv_jupyter_env
 ```
 
@@ -36,8 +36,16 @@ acidentais.
 
 ### 4. Configurar o .env
 
+Abra o arquivo `.env` em um editor de texto e substitua `coloque_sua_chave_aqui` pela sua chave:
+
 ```bash
-# Edite o arquivo .env com sua chave:
+# Exemplo com nano:
+nano .env
+```
+
+Conteúdo esperado do `.env` depois de editado:
+
+```bash
 OLLAMA_API_KEY=sk-sua_chave_aqui
 OLLAMA_BASE_URL=https://api.ollama.com
 OLLAMA_MODEL=ministral-3:3b
@@ -57,9 +65,10 @@ cp recursos_e_exercicios/01_sobre_o_jupyterlab/01_18_*.ipynb \
    ambiente_laboratorio/01_sobre_o_jupyterlab/
 ```
 
-### 6. Iniciar o Jupyter Lab
+### 6. Ativar o ambiente e iniciar o Jupyter Lab
 
 ```bash
+source .venv/bin/activate
 jupyter lab
 ```
 
