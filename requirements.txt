@@ -1,0 +1,10 @@
+jupyterlab>=4.0,<5.0
+ipykernel>=6.29
+numpy>=1.26
+pandas>=2.2
+matplotlib>=3.8
+networkx>=3.2
+mesa>=3.0
+requests>=2.31
+psutil>=5.10
+python-dotenv>=1.0
