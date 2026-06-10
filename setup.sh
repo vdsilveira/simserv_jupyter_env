@@ -22,6 +22,12 @@ if [ "$PYTHON_OK" = false ]; then
     sudo apt-get update -qq && sudo apt-get install -y -qq python3 python3-venv python3-pip
 fi
 
+# Pandoc + LaTeX (para gerar PDF dos exercicios)
+command -v pandoc >/dev/null 2>&1 || {
+    echo "Pandoc nao encontrado. Instalando..."
+    sudo apt-get install -y -qq pandoc texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-xetex
+}
+
 echo "Python: $(python3 --version)"
 
 if [ ! -d .venv ]; then

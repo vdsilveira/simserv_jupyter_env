@@ -1,0 +1,21 @@
+Source,Target,Type,Weight,Label
+P1,A1,Directed,3,orienta
+P1,A2,Directed,3,orienta
+P1,A5,Directed,3,orienta
+P1,A6,Directed,3,orienta
+M1,A3,Directed,2,apoia
+M1,A4,Directed,2,apoia
+M1,A7,Directed,2,apoia
+M1,A8,Directed,2,apoia
+A1,A2,Undirected,1,colabora
+A2,A3,Undirected,1,colabora
+A3,A4,Undirected,1,colabora
+A5,A6,Undirected,1,colabora
+A6,A7,Undirected,1,colabora
+A7,A8,Undirected,1,colabora
+A4,A5,Undirected,1,troca entre grupos
+A2,A6,Undirected,1,troca entre grupos
+A1,L1,Directed,1,usa
+A3,L1,Directed,1,usa
+A5,L1,Directed,1,usa
+A7,L1,Directed,1,usa

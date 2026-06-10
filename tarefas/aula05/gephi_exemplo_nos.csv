@@ -1,0 +1,12 @@
+Id,Label,Tipo,Grupo
+A1,Ana,Aluno,Grupo 1
+A2,Bruno,Aluno,Grupo 1
+A3,Carla,Aluno,Grupo 1
+A4,Diego,Aluno,Grupo 1
+A5,Eva,Aluno,Grupo 2
+A6,Felipe,Aluno,Grupo 2
+A7,Gabi,Aluno,Grupo 2
+A8,Hugo,Aluno,Grupo 2
+P1,Prof. Marta,Professor,Docente
+M1,Monitor Leo,Monitor,Apoio
+L1,Lab SimServ,Laboratório,Infra
