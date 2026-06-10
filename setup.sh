@@ -50,6 +50,8 @@ if [ ! -f .env ]; then
 OLLAMA_API_KEY=coloque_sua_chave_aqui
 OLLAMA_BASE_URL=https://api.ollama.com
 OLLAMA_MODEL=ministral-3:3b
+NOME=seu_nome_aqui
+RA=seu_ra_aqui
 EOF
     echo ".env criado com placeholders. Edite com sua chave Ollama Cloud."
 fi
