@@ -8,3 +8,4 @@ mesa>=3.0
 requests>=2.31
 psutil>=5.10
 python-dotenv>=1.0
+tabulate>=0.9
