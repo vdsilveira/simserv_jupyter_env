@@ -29,7 +29,7 @@ acidentais.
 
 ### 3. Obter chave da Ollama Cloud
 
-1. Acesse https://cloud.ollama.com
+1. Acesse https://ollama.com
 2. Crie uma conta ou faça login
 3. Vá em **Settings > API Keys** e gere uma nova chave
 4. Copie a chave (formato: `sk-...`)
