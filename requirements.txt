@@ -10,3 +10,4 @@ psutil>=5.10
 python-dotenv>=1.0
 tabulate>=0.9
 deap>=1.4
+streamlit>=1.35
