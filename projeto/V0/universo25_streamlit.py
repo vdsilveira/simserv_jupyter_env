@@ -155,7 +155,7 @@ CHECKPOINT_NAMES = [
 def evaluate_with_llm(pop_history, stress_history, col_history,
                        beautiful_history, params_used, n_steps):
     api_key = os.getenv('OLLAMA_API_KEY', '')
-    base_url = os.getenv('OLLAMA_BASE_URL', 'https://api.ollama.com')
+    base_url = os.getenv('OLLAMA_BASE_URL', 'https://ollama.com')
     model_name = os.getenv('OLLAMA_MODEL', 'ministral-3:3b')
 
     if not api_key:
